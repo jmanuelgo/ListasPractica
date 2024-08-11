@@ -66,7 +66,5 @@ public class Paciente implements Serializable {
     public void setDireccion(String direccion) {
         this.direccion = direccion;
     }
-    public String toString(){
-        return (codigoPaciente+"\n"+nombre+" "+apellido1+" "+apellido2);
-    }
+
 }

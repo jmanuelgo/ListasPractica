@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <TextView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/textView3"
+    android:id="@+id/textLista"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="#ED7D31"
-
-    android:gravity="center"
-    android:text="TextView"
     android:height="100dp"
-    android:textColor="@color/white" />
+    android:paddingLeft="25dp"
+    android:maxLines="2"
+    android:background="#ED7D31"
+    android:gravity="left|center_vertical"
+    android:text="TextView"
+    android:textColor="@color/white"
+    android:visibility="visible" />

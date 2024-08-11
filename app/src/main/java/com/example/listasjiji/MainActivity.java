@@ -56,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
         paciente.sort(new Comparator<Paciente>() {
             @Override
             public int compare(Paciente p1, Paciente p2) {
-                return p1.getNombre().compareToIgnoreCase(p2.getNombre());
+                return p1.getApellido1().compareToIgnoreCase(p2.getApellido1());
             }
         });
     }
