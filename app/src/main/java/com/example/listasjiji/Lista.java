@@ -30,7 +30,7 @@ public class Lista extends AppCompatActivity {
         ListaPacientes=findViewById(R.id.lwLista);
         pacientes= (ArrayList<Paciente>) getIntent().getSerializableExtra("Lista");
         if (pacientes!=null){
-            ArrayAdapter<Paciente> adapter=new ArrayAdapter<>(this,R.layout.listviewpersonalizado,pacientes);
+            AdaptadorPaciente adapter=new AdaptadorPaciente(this,pacientes);
             ListaPacientes.setAdapter(adapter);
         }
     }
