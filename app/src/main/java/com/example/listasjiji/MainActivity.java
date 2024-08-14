@@ -57,8 +57,16 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public int compare(Paciente p1, Paciente p2) {
                 return p1.getApellido1().compareToIgnoreCase(p2.getApellido1());
+
             }
         });
+        nombre.setText("");
+        ape1.setText("");
+        ape2.setText("");
+        codigo.setText("");
+        direc.setText("");
+        hombre.setChecked(false);
+        mujer.setChecked(false);
     }
     public void Mostrar(View v){
         Intent it=new Intent(getApplicationContext(), Lista.class);

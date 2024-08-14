@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
-    android:background="@drawable/fondo"
+    android:background="#FF0000"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
@@ -13,11 +13,15 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="REGISTRO PACIENTES"
+        android:textColor="#F2F7FB"
+        android:textSize="20dp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.087" />
+        app:layout_constraintVertical_bias="0.076" />
 
     <EditText
         android:id="@+id/txtNombre"
@@ -27,6 +31,8 @@
         android:ems="10"
         android:hint="Nombre"
         android:inputType="text"
+        android:textColorHint="#F2F7FB"
+        android:textColor="#F2F7FB"
         app:layout_constraintTop_toBottomOf="@+id/textView2"
         tools:layout_editor_absoluteX="-3dp" />
 
@@ -39,6 +45,8 @@
         android:ems="10"
         android:hint="Apellido Paterno"
         android:inputType="text"
+        android:textColorHint="#F2F7FB"
+        android:textColor="#F2F7FB"
         app:layout_constraintTop_toBottomOf="@+id/txtNombre"
         tools:layout_editor_absoluteX="0dp" />
 
@@ -51,6 +59,8 @@
         android:ems="10"
 
         android:hint="Apellido Materno"
+        android:textColorHint="#F2F7FB"
+        android:textColor="#F2F7FB"
         android:inputType="text"
         app:layout_constraintStart_toEndOf="@+id/txtApe1"
         app:layout_constraintTop_toBottomOf="@+id/txtNombre" />
@@ -62,7 +72,8 @@
         android:layout_marginTop="40dp"
         android:ems="10"
         android:hint="Descripcion"
-
+        android:textColorHint="#F2F7FB"
+        android:textColor="#F2F7FB"
         android:inputType="text"
         app:layout_constraintTop_toBottomOf="@+id/txtCodigo"
         tools:layout_editor_absoluteX="0dp" />
@@ -120,16 +131,20 @@
         android:ems="10"
         android:hint="Codigo Paciente"
         android:inputType="text"
+        android:textColorHint="#F2F7FB"
+        android:textColor="#F2F7FB"
         app:layout_constraintStart_toEndOf="@+id/radioGroup"
         app:layout_constraintTop_toBottomOf="@+id/txtApe2" />
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="80dp"
-        android:layout_height="41dp"
-        android:layout_marginTop="8dp"
+        android:layout_width="84dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
         android:text="Sexo"
-        app:layout_constraintTop_toBottomOf="@+id/txtApe1"
-        tools:layout_editor_absoluteX="0dp" />
+        android:textColor="#F2F7FB"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtApe1" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
